@@ -12,7 +12,6 @@ export class GifsService {
   private serviceUrl: string = 'http://api.giphy.com/v1/gifs';
   constructor(private http: HttpClient) {
     this.loadLocalStorage();
-    this.loadGifCardList();
   }
 
   get tagsHistory() {
